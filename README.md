@@ -8,7 +8,7 @@ simply run
     ./bash_hello
 
 This prints "Hello World! -- Bash --"
----
+
 Assembly
 -----
 This is written using the MIPS32 assembly language, though 
@@ -18,7 +18,7 @@ MIPS. You can install it with:
     sudo apt-get install spim
 and then run the program with:
     spim -f assembly_hello.s
----
+
 C
 -----
 C is one of the older and more important languages still out there.
@@ -26,7 +26,7 @@ Compile with this:
     gcc -o c_hello c_hello.c
 to create an executable named c_hello that you run with:
     ./c_hello
----
+
 C++
 -----
 C++ is basically C but a little newer and a little more powerful
