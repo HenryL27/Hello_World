@@ -5,7 +5,7 @@ Bash
 ------
 simply run
 
-    ./bash_hello
+    ./.bash_hello
 
 This prints "Hello World! -- Bash --"
 
