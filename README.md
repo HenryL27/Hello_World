@@ -9,7 +9,7 @@ simply run
 
 This prints "Hello World! -- Bash --"
 
-Assembly
+MIPS Assembly
 -----
 This is written using the MIPS32 assembly language, though 
 I suspect it would be similar for most languages of this sort.
@@ -22,6 +22,17 @@ and then run the program with:
 
     spim -f assembly_hello.s
 
+x86 NASM Assebmly
+-----
+This is one of the most common assembly languages for the Intel x86
+type processors - what basically everyone uses. You can run it with:
+
+    nasm -felf64 x86_hello.asm
+    ld x86_hello.o
+    ./a.out
+
+The first command creates the .o file, the second command loads that
+into an executable called a.out, and the last command executes it.
 
 C
 -----
@@ -94,8 +105,13 @@ HTML
 HTML stands for HyperText Markup Language and is the language of pretty much 
 every website. But it is hard to run with a terminal because it is more of a 
 display mechanism that a process mechanism (though, surprisingly, HTML is 
-turing-complete). So the easiest way to run this is to just open it in the 
-standard file system in the browser
+turing-complete). It turns out though, that you can run some browsers from 
+the terminal. So you can open it in a browser with:
+
+    firefox html_hello.html
+
+or whatever browser you have installed. For WSL users, I advise aliasing 
+firefox to the path the windows executable in your file system
 
 Java
 -----
