@@ -61,6 +61,27 @@ and then run whitespace code like so:
 
 again, aliases make this easier if you intend to do any other Whitespace development.
 
+Smalltalk
+------
+This is one of the earlier object-oriented languages; according to Jim, one of the
+inspirations of C++. Anyway, it's a pretty simple program and run:
+
+	gst smalltalk_hello.st
+
+and that's it.
+
+ALGOL
+------
+ALGOL is here mainly for historical significance. (It, like, introduced the concept of a 
+code block. You know, like one of these {...}). It was very popular in the 60s, 
+with ALGOL 60, but then ALGOL 68 came out and it seems like people tried to use 
+it and hated it, but by then they had left 60, so they all went to FORTRAN. Or something
+like that. So I could not find a compiler for ALGOL 60 online (not that I looked **super**
+hard), so this is the widely dispreferred ALGOL 68 hello world, which is almost pythonic.
+I ran this using the ALGOL 68 Genie compiler, which you can just download from the internet. 
+(Not sure about macs). And then I just execute it with the .a68 file. Again, aliases help
+for pointing.
+
 Bash
 ------
 simply run
