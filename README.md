@@ -82,6 +82,14 @@ I ran this using the ALGOL 68 Genie compiler, which you can just download from t
 (Not sure about macs). And then I just execute it with the .a68 file. Again, aliases help
 for pointing.
 
+Rust
+------
+I don't really know what the deal is with Rust, but it seems to be a pretty popular
+and rather modern compiled language. Anyway, here's the command:
+
+	rustc rust_hello.rs
+	./rust_hello
+
 Bash
 ------
 simply run
