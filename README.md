@@ -1,6 +1,66 @@
 ### HELLO WORLD ###
 **in lots of languages**
 
+Ada
+------
+One of the older languages in here, a dynamically typed, compiled
+language. Basically the python of the late 70s. Compile with
+
+    gnatmake ada_hello.adm
+
+This will generate a bunch of junk midstep files. You can put them 
+in another directory with -D like so:
+	
+    gnatmake ada_hello.adm -D junk/
+
+LISP
+------
+One of the main functional languages out there. Actually it's a whole 
+family. The program is basically a function call to a lambda that 
+prints. Run with
+
+	sbcl --script lisp_hello.lsp
+
+Clojure
+------
+Another functional language, but it's based on java, so there's more 
+boilerplate. Installing this language was a little tricky - it looks 
+like it is not so common for windows-ers to work with, so I am using 
+the .jar stuff that is on their github:
+
+	git clone https://github.com/clojure/clojure.git
+	cd clojure
+	mvn -Plocal -Dmaven.test.skip=true package
+
+then run from Hello_World with
+
+	java -jar clojure/clojure.jar clj_hello.clj
+
+some .bash_aliases trickery can make this more efficient. And of course if
+you're on a mac you should just be able to do a 'sudo apt-get install'
+type command.
+
+Whitespace
+------
+Now here's a fun one. Basically, the deal with this is the only characters
+in this language that matter are ' ', '\t', and '\n'. So it is really quite 
+close to machine code (and yes, it was developed entirely as a joke). It has 
+a stack and a heap, except that the stack is a literal stack. So what I have 
+had to do is put the binary ascii representation of each letter on the stack,
+(backwards), and then print them out one at a time.
+Since it is a joke language, there was also some difficulty setting it up.
+Basically, it is just a C program that someone wrote. So here's the setup deal:
+
+	git clone https://github.com/rdebath/whitespace.git
+	cd whitespace
+	make
+
+and then run whitespace code like so:
+
+	whitespace/wsc ws_hello.ws
+
+again, aliases make this easier if you intend to do any other Whitespace development.
+
 Bash
 ------
 simply run
