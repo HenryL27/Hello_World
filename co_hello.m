@@ -1,6 +1,5 @@
-#import </usr/include/GNUstep/Foundation/Foundation.h>
-
+#include <stdio.h>
 int main (){
-    NSLog (@"Hello World! --Objective-C--\n");
+    printf("Hello World! --Objective-C--\n");
     return 0;
 }
